@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
+import { useState } from "react";
 
 const skills = [
   { name: "HTML", category: "frontend", icon: "html.png" },
@@ -16,26 +16,28 @@ const skills = [
   { name: "CSS", category: "frontend", icon: "css.png" },
   { name: "Git/GitHub", category: "tools", icon: "git.png" },
   { name: "VS Code", category: "tools", icon: "vscode.webp" },
-  { name: "Firebase", category: "tools", icon: "firebase.png" }
-]
+  { name: "Firebase", category: "tools", icon: "firebase.png" },
+];
 
-const categories = ['all', 'frontend', 'backend', 'tools']
+const categories = ["all", "frontend", "backend", "tools"];
 
 export default function SkillsSection() {
-  const [activeCategory, setActiveCategory] = useState('all')
-  const [zoomedIndex, setZoomedIndex] = useState(null)
+  const [activeCategory, setActiveCategory] = useState("all");
+  const [zoomedIndex, setZoomedIndex] = useState(null);
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === 'all' || skill.category === activeCategory
-  )
+    (skill) => activeCategory === "all" || skill.category === activeCategory
+  );
 
   const getButtonClass = (category) =>
     `
     px-5 py-2 rounded-full transition-colors duration-300 capitalize
-    ${activeCategory === category
-      ? 'bg-primary text-primary-foreground'
-      : 'bg-secondary text-foreground hover:bg-secondary/80'}
-  `
+    ${
+      activeCategory === category
+        ? "bg-primary text-primary-foreground"
+        : "bg-secondary text-foreground hover:bg-secondary/80"
+    }
+  `;
 
   return (
     <section id="skills" className="py-18 px-4 bg-secondary/30">
@@ -68,7 +70,7 @@ export default function SkillsSection() {
               className={`
                 bg-card p-6 rounded-lg shadow-sm cursor-pointer text-center
                 transition-transform duration-300
-                ${zoomedIndex === index ? 'scale-110 z-10' : 'hover:scale-105'}
+                ${zoomedIndex === index ? "scale-110 z-10" : "hover:scale-105"}
               `}
             >
               <img
@@ -84,5 +86,5 @@ export default function SkillsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

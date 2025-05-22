@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
+import { useState } from "react";
 import {
   FaInstagram,
   FaLinkedin,
@@ -9,23 +9,23 @@ import {
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
-  FaPaperPlane
-} from 'react-icons/fa'
+  FaPaperPlane,
+} from "react-icons/fa";
 
 export default function ContactSection() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [messageSent, setMessageSent] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+    e.preventDefault();
+    setIsSubmitting(true);
 
     setTimeout(() => {
-      setMessageSent(true)
-      setIsSubmitting(false)
-      setTimeout(() => setMessageSent(false), 3000)
-    }, 1500)
-  }
+      setMessageSent(true);
+      setIsSubmitting(false);
+      setTimeout(() => setMessageSent(false), 3000);
+    }, 1500);
+  };
 
   return (
     <section id="contact" className="py-9 px-4 bg-secondary/30">
@@ -81,23 +81,24 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
-  <p className="text-muted-foreground">
-    Panchsheel Greens 2, Ghaziabad, Ithaira, Uttar Pradesh 201009
-  </p>
+                  <p className="text-muted-foreground">
+                    Panchsheel Greens 2, Ghaziabad, Ithaira, Uttar Pradesh
+                    201009
+                  </p>
 
-  {/* Location Map */}
-  <div className="mt-4 rounded-md overflow-hidden border border-border shadow-md">
-    <iframe
-      title="Panchsheel Greens 2 Map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14012.940723364584!2d77.4309014!3d28.6282974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf20dfc1a163d%3A0x2c7e21f3e73863ab!2sPanchsheel%20Greens%202%2C%20Ghaziabad%2C%20Ithaira%2C%20Uttar%20Pradesh%20201009!5e0!3m2!1sen!2sin!4v1716452430211!5m2!1sen!2sin"
-      width="100%"
-      height="200"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>
+                  {/* Location Map */}
+                  <div className="mt-4 rounded-md overflow-hidden border border-border shadow-md">
+                    <iframe
+                      title="Panchsheel Greens 2 Map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14012.940723364584!2d77.4309014!3d28.6282974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf20dfc1a163d%3A0x2c7e21f3e73863ab!2sPanchsheel%20Greens%202%2C%20Ghaziabad%2C%20Ithaira%2C%20Uttar%20Pradesh%20201009!5e0!3m2!1sen!2sin!4v1716452430211!5m2!1sen!2sin"
+                      width="100%"
+                      height="200"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
@@ -127,7 +128,10 @@ export default function ContactSection() {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
                   Your Name
                 </label>
                 <input
@@ -141,7 +145,10 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
                   Your Email
                 </label>
                 <input
@@ -155,7 +162,10 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
                   Your Message
                 </label>
                 <textarea
@@ -184,9 +194,7 @@ export default function ContactSection() {
             </form>
           </div>
         </div>
-        
       </div>
-      
     </section>
-  )
+  );
 }

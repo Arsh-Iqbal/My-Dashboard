@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FiMenu, FiX } from 'react-icons/fi'
+import { FiMenu, FiX } from "react-icons/fi";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
@@ -19,7 +19,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
-      
+
       // Close menu automatically when scrolling
       if (isMenuOpen) {
         setIsMenuOpen(false);
@@ -67,7 +67,7 @@ export default function Navbar() {
           <button
             onClick={() => setIsMenuOpen((prev) => !prev)}
             className="p-2 text-foreground text-2xl"
-            aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
+            aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
           >
             {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
@@ -81,7 +81,10 @@ export default function Navbar() {
               : "opacity-0 pointer-events-none"
           }`}
         >
-          <div className="flex flex-col space-y-8 text-xl" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="flex flex-col space-y-8 text-xl"
+            onClick={(e) => e.stopPropagation()}
+          >
             {navItems.map((item, key) => (
               <a
                 key={key}

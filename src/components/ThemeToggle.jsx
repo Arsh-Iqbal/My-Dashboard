@@ -1,32 +1,33 @@
-'use client'
+"use client";
 
-import { FaMoon, FaSun } from 'react-icons/fa'
-import { useEffect, useState } from 'react'
+import { FaMoon, FaSun } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
-export const ThemeToggle = ({ className = '' }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+export const ThemeToggle = ({ className = "" }) => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme')
+    const storedTheme = localStorage.getItem("theme");
 
     if (
-      storedTheme === 'dark' ||
-      (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      storedTheme === "dark" ||
+      (!storedTheme &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      document.documentElement.classList.add('dark')
-      setIsDarkMode(true)
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
     } else {
-      document.documentElement.classList.remove('dark')
-      setIsDarkMode(false)
+      document.documentElement.classList.remove("dark");
+      setIsDarkMode(false);
     }
-  }, [])
+  }, []);
 
   const toggleTheme = () => {
-    const newTheme = isDarkMode ? 'light' : 'dark'
-    document.documentElement.classList.toggle('dark', newTheme === 'dark')
-    localStorage.setItem('theme', newTheme)
-    setIsDarkMode(!isDarkMode)
-  }
+    const newTheme = isDarkMode ? "light" : "dark";
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
+    localStorage.setItem("theme", newTheme);
+    setIsDarkMode(!isDarkMode);
+  };
 
   return (
     <button
@@ -40,5 +41,5 @@ export const ThemeToggle = ({ className = '' }) => {
         <FaMoon className="h-5 w-5 text-blue-900" />
       )}
     </button>
-  )
-}
+  );
+};
