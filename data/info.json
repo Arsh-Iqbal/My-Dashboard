@@ -1,0 +1,68 @@
+{
+  "name": "John Doe",
+  "bio": "A passionate web developer and lifelong learner.",
+  "contact": {
+    "email": "john@example.com",
+    "phone": "123-456-7890"
+  },
+  "education": [
+    {
+      "institution": "XYZ University",
+      "degree": "B.Tech in Computer Science",
+      "year": "2021 - 2025"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Frontend Intern",
+      "company": "Tech Co.",
+      "duration": "Jan 2024 - Apr 2024"
+    }
+  ],
+  "skills": ["JavaScript", "React", "Next.js", "Tailwind CSS"],
+   "hobbies": [
+    "Playing cricket and chess",
+    "Coding and building projects",
+    "Watching movies",
+    "Playing online multiplayer games"
+  ],
+  "goals": "I'm passionate about becoming the absolute best programmer and developer I can be, someone who approaches every challenge with a commitment to perfection. Looking ahead, I see myself as an entrepreneur, translating my technical expertise and drive for excellence into creating something truly impactful and successful.",
+  "achievements": [
+    "State-level chess player",
+    "Gold medalist at cluster-level in chess"
+  ],
+  "certificate": {
+    "title": "MERN Stack Certification",
+    "description": "Completed a comprehensive MERN stack training covering HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. Developed several real-world projects demonstrating full-stack proficiency.",
+    "image": "mern.png"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Mern Blog Website",
+      "description": "A responsive web application using mern Implemented JWT GoogleOAuth authentication Redux Toolkit for state management admin dashboard features",
+      "image": "/projects/blog.jpg",
+      "tags": ["React", "TailwindCSS", "Nodejs","Firebase"],
+      "demoUrl": "https://mern-blog-website-yuld.onrender.com/",
+      "githubUrl": "https://github.com/Arsh-Iqbal/Mern-Blog_Website.git"
+    },
+    {
+      "id": 2,
+      "title": "Mern Real Estate",
+      "description": "Set up Reactjs with Tailwind CSS implemented dynamic pages JWT and Google OAuth authentication and Redux Toolkit for state management",
+      "image": "/projects/estate.jpg",
+       "tags": ["React", "TailwindCSS", "Nodejs","Firebase"],
+      "demoUrl": "https://mern-real-estate-8i5z.onrender.com/",
+      "githubUrl": "https://github.com/Arsh-Iqbal/Mern-Real-Estate.git"
+    },
+    {
+      "id": 3,
+      "title": "Barber Landing Page",
+      "description": "Responsive barber landing page using React with sections like Home, Services, Gallery, About, and Contact for a modern, engaging experience.",
+      "image": "/projects/barber.png",
+      "tags": ["React","TailwindCSS" ,"HTML"],
+      "demoUrl": "https://landing-page-barber-shop-ou8y.vercel.app/",
+      "githubUrl": "https://github.com/Arsh-Iqbal/Landing-Page-Barber-Shop.git"
+    }
+  ]
+}
