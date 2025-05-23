@@ -47,7 +47,7 @@ export default function SkillsSection() {
         </h2>
 
         {/* Category Filters */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12 ">
           {categories.map((category, index) => (
             <button
               key={index}

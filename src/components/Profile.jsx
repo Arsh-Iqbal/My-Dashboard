@@ -29,17 +29,15 @@ export default function ProfileSection() {
             />
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              {" "}
-              Arsh
-            </span>
-            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}
-              Iqbal
-            </span>
-          </h1>
+       <h1 className="text-4xl md:text-6xl font-bold tracking-tight responsive-heading">
+  <span className="opacity-0 animate-fade-in">Hi, I'm</span>
+  <span className="text-primary opacity-0 animate-fade-in-delay-1 ml-2 md:ml-4">
+    Arsh
+  </span>
+  <span className="text-gradient opacity-0 animate-fade-in-delay-2 ml-2 md:ml-4">
+    Iqbal
+  </span>
+</h1>
           <p className="text-center max-w-2xl mx-auto text-muted-foreground opacity-100 px-2 md:px-0">
             I’m passionate about developing well-rounded web applications that
             deliver excellent user experiences. As a full-stack developer, I

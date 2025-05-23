@@ -17,7 +17,7 @@ export default function Home() {
       {/* Background Animation */}
       <StarBackground />
       <Navbar />
-      <main className="max-w-4xl mx-auto px-4">
+      <main className="">
         <Profile />
         <Experience />
         <Skills />

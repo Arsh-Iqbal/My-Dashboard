@@ -160,3 +160,16 @@
   padding: 0;
   text-align: center;
 }
+
+@media (max-width: 440px) {
+  .responsive-heading {
+    font-size: 1.26rem; /* smaller font size for headings */
+    /* text-align: center; */
+    white-space: nowrap;
+     /* ensure centered text */
+  }
+  /* Optional: make other text or layout adjustments if needed */
+  .responsive-section {
+    padding: 1rem; /* reduce padding if necessary */
+  }
+}

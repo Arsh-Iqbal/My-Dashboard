@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-18 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center responsive-heading">
           Featured <span className="text-primary">Projects</span>
         </h2>
 

@@ -2,14 +2,14 @@
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-12 px-4 bg-secondary/30">
-      <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+    <section id="experience" className="py-12 px-4 bg-secondary/30 .responsive-section">
+      <div className="container mx-auto max-w-4xl ">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center responsive-heading">
           <span className="text-primary">Education</span> & Experience
         </h2>
 
         <div className="mb-16 space-y-6">
-          <h3 className="text-2xl font-semibold text-primary mb-4">
+          <h3 className="text-2xl font-semibold text-primary mb-4  responsive-heading">
             Education
           </h3>
           <div className="bg-card p-6 rounded-lg shadow-md">
@@ -23,11 +23,11 @@ export default function ExperienceSection() {
         </div>
 
         <div className="space-y-6">
-          <h3 className="text-2xl font-semibold text-primary mb-4">
+          <h3 className="text-2xl font-semibold text-primary mb-4  responsive-heading">
             Internship
           </h3>
           <div className="bg-card p-6 rounded-lg shadow-md">
-            <h4 className="text-lg font-bold mb-1">Full Stack Development</h4>
+            <h4 className="text-lg font-bold mb-1 small-text">Full Stack Development</h4>
             <p className="text-sm text-muted-foreground mb-1">
               Dilkash Ridwan Peshimam | Mumbai, Virtual
             </p>

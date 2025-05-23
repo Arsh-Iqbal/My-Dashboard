@@ -49,10 +49,15 @@ export default function Footer() {
             <SiGmail className="icons" />
           </a>
         </div>
-
-        <p className="text-sm text-muted-foreground mt-6">
-          © {new Date().getFullYear()} All rights reserved. Made with ❤️ by Arsh
-        </p>
+        
+         <div className="flex flex-col md:flex-row items-center md:justify-center gap-2 md:gap-1 mt-4">
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} All rights reserved.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            Made with ❤️ by Arsh
+          </p>
+        </div>
       </div>
     </footer>
   );
